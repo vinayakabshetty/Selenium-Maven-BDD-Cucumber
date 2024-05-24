@@ -31,7 +31,7 @@ public class ApplicationHooks {
 		System.out.println("Launch browser "+browserName1);
 		driverFactory = new DriverFactory();
 		driver = driverFactory.init_driver(browserName1);
-		driver.get("https://the-internet.herokuapp.com");
+		// driver.get("https://the-internet.herokuapp.com");
 	}
 
 	@After(order=0)
