@@ -42,7 +42,7 @@ public class ApplicationHooks {
 	@After(order=1)
 	public void tearDown(Scenario scenario) {
 		if(scenario.isFailed()) {
-			String screenShotName = scenario.getName().replaceAll("", "_");
+			String screenShotName = scenario.getName().replaceAll(" ", "_");
 			byte[] sourcePath = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
 			scenario.attach(sourcePath, "image/png", screenShotName);
 		}

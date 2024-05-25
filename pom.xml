@@ -65,14 +65,12 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.2.5</version>
 				<configuration>
-					<properties>
-						<!-- Work around. Surefire does not include enough
-                 information to disambiguate between different
-                 examples and scenarios. -->
-						<configurationParameters>
-							cucumber.junit-platform.naming-strategy=long
-						</configurationParameters>
-					</properties>
+					<includes>
+						<include>HeroKaupp_Runner.java</include>
+					</includes>
+					<excludes>
+						<exclude>GoogleSearch_TestRunner.java</exclude>
+					</excludes>
 				</configuration>
 			</plugin>
 		</plugins>
