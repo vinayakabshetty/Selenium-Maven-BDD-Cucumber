@@ -7,6 +7,6 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = { "src//test//java//features//" }, glue = { "stepdefinitions",
 		"applicationHooks" }, tags = "@Smoke", plugin = {
-				"pretty" }, publish = false, monochrome = false, dryRun = false)
+				"pretty","json:target/report.json" }, publish = false, monochrome = false, dryRun = false)
 public class GoogleSearch_TestRunner {
 }

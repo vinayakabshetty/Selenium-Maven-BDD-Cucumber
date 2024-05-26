@@ -6,3 +6,8 @@ Feature: Google
     Given user is in google search page
     And user enters "J meter" in search field
     When user clicks on search icon
+    
+  Scenario: Navigate to gmail login page
+    Given user is in google search page
+    And user clicks on gmail link
+    Then gmail inbox page will display
