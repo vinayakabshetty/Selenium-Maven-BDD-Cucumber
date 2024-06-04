@@ -13,7 +13,7 @@ public class ConfigReader {
 		prop = new Properties();
 		try {
 			FileInputStream ip = new FileInputStream(
-					"C:\\Users\\lenovo\\eclipse-workspace\\BDD-Cucumber-Selenium\\src\\test\\java\\resources\\config.properties");
+					"C:\\Users\\lenovo\\eclipse-workspace\\BDD-Cucumber-Selenium\\src\\main\\resources\\config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

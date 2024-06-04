@@ -1,0 +1,5 @@
+18:03:50.665 [main]INFO  Log4jDemo.class - INFO
+18:03:50.723 [main]DEBUG Log4jDemo.class - DEBUG
+18:03:50.725 [main]WARN  Log4jDemo.class - WARNING
+18:03:50.726 [main]ERROR Log4jDemo.class - ERROR
+18:03:50.727 [main]FATAL Log4jDemo.class - FATAL

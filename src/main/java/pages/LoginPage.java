@@ -10,8 +10,9 @@ public class LoginPage {
 
 	private WebDriver driver;
 	private By searchEditBox = By.name("q");
-
-	public LoginPage(){
+	private By gmailLink = By.linkText("Gmail");
+	
+	public LoginPage() {
 		this.driver = DriverFactory.getDriver();
 	}
 
@@ -20,7 +21,6 @@ public class LoginPage {
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -32,4 +32,9 @@ public class LoginPage {
 	public void clickOnEnterButton() {
 		driver.findElement(searchEditBox).sendKeys(Keys.ENTER);
 	}
+
+	public void userClicksOnGmailLinkInGooglePage() {
+		driver.findElement(gmailLink).click();
+	}
+
 }

@@ -25,5 +25,12 @@ public class GoogleSearchPageSteps {
 	public void user_clicks_on_search_icon() {
 		loginPage.clickOnEnterButton();
 	}
+	
+	@Given("user clicks on gmail link")
+	public void user_clicks_on_gmail_link() {
+	   loginPage.userClicksOnGmailLinkInGooglePage();
+	}
+
+	
 
 }
